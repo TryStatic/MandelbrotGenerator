@@ -65,8 +65,8 @@ void FractalCreator::addRange(double rangeEnd, const RGB &rgb) {
 
 int FractalCreator::getRange(int iterations) const {
 
-	auto range = 0;
-	for(auto i=1 ; i < m_ranges.size(); i++) {
+	int range = 0;
+	for(int i=1 ; i < m_ranges.size(); i++) {
 		range = i;
 		if(m_ranges[i] > iterations) {
 			break;
